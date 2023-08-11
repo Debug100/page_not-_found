@@ -5,12 +5,13 @@
     <meta charset="utf" />
     <title>404</title>
     <style>
-
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Noto+Sans+JP:wght@500&display=swap');
 
         .box-phone {
-            margin: 50% auto;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .box-phone div {
@@ -43,14 +44,16 @@
         .box-phone p {
             font-family: 'Noto Sans JP', sans-serif;
         }
+
+                
     </style>
 </head>
 
 <body>
     <div class="box-phone">
-        <div>4<span>0</span>4</div>
+        <div class="container">4<span>0</span>4</div>
         <p>You did not break the internet,but we can not find what you are looking for.</p>
     </div>
 </body>
-
+`<script>window.onmousemove = e => document.querySelector(".box-phone").style.transform = "translateX(" + (e.clientX - (window.innerWidth/2)) * 0.20 + "px)"</script>` 
 </html>
